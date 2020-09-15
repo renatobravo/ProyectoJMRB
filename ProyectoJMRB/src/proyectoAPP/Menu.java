@@ -11,6 +11,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 
+import proyectoModel.entities.Usuario;
 import proyectoModel.entities.Postulante;
 import proyectoModel.services.PostulantesService;
 
@@ -44,24 +45,9 @@ public class Menu extends JFrame {
 	private JLabel lblNewLabel_2;
 	private JLabel lblMenPostulantes;
 	private JLabel lblMenSistemas;
-
-
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					Menu frame = new Menu();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
 	
+	public static Usuario usuario;
+
 	private void cargarTabla() {
 		PostulantesService service = new PostulantesService();
 		List<Postulante> listPost = service.obtenerTodos();

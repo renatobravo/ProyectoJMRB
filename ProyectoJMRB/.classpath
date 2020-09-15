@@ -8,5 +8,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="D:/UNAB/libs/jcalendar-1.4.jar"/>
 	<classpathentry kind="lib" path="D:/UNAB/libs/ojdbc8.jar"/>
+	<classpathentry kind="lib" path="D:/UNAB/libs/commons-codec-1.15.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
